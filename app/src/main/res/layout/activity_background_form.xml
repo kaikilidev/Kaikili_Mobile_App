@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_header" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dim20">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/background_form_layout_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim30"
+                        android:layout_marginRight="@dimen/dim30">
+
+                        <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                            android:id="@+id/background_form_edit_first"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="First"
+                            android:maxLength="50"
+                            android:textColor="@color/black_87"
+                            android:singleLine="true"
+                            android:textSize="@dimen/fontsize16" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/background_form_layout_middle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim30"
+                        android:layout_marginTop="@dimen/dim8"
+                        android:layout_marginRight="@dimen/dim30">
+
+                        <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                            android:id="@+id/background_form_edit_middle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Middle"
+                            android:maxLength="50"
+                            android:textColor="@color/black_87"
+                            android:singleLine="true"
+                            android:textSize="@dimen/fontsize16" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/background_form_layout_last"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim30"
+                        android:layout_marginTop="@dimen/dim8"
+                        android:layout_marginRight="@dimen/dim30">
+
+                        <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                            android:id="@+id/background_form_edit_last"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Last"
+                            android:textColor="@color/black_87"
+                            android:maxLength="50"
+                            android:singleLine="true"
+                            android:textSize="@dimen/fontsize16" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/background_form_layout_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim30"
+                        android:layout_marginTop="@dimen/dim8"
+                        android:layout_marginRight="@dimen/dim30">
+
+                        <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                            android:id="@+id/background_form_edit_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|left"
+                            android:hint="Address"
+                            android:maxLength="100"
+                            android:maxLines="2"
+                            android:minLines="2"
+                            android:textColor="@color/black_87"
+                            android:singleLine="false"
+                            android:textSize="@dimen/fontsize16" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim30"
+                        android:layout_marginTop="@dimen/dim8"
+                        android:layout_marginRight="@dimen/dim30"
+                        android:orientation="horizontal"
+                        android:weightSum="8">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/background_form_layout_city"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4">
+
+                            <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                                android:id="@+id/background_form_edit_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="City"
+                                android:textColor="@color/black_87"
+                                android:maxLength="30"
+                                android:singleLine="true"
+                                android:textSize="@dimen/fontsize16" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="2" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/background_form_layout_st"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2">
+
+                            <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                                android:id="@+id/background_form_edit_st"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="ST"
+                                android:textColor="@color/black_87"
+                                android:maxLength="100"
+                                android:singleLine="true"
+                                android:textSize="@dimen/fontsize16" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/background_form_layout_zip"
+                        android:layout_width="@dimen/extra_padding_x100"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim30"
+                        android:layout_marginTop="@dimen/dim8"
+                        android:layout_marginRight="@dimen/dim30">
+
+                        <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                            android:id="@+id/background_form_edit_zip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Zip"
+                            android:textColor="@color/black_87"
+                            android:maxLength="8"
+                            android:singleLine="true"
+                            android:textSize="@dimen/fontsize16" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/background_form_layout_ssn"
+                        android:layout_width="@dimen/extra_padding_x200"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim30"
+                        android:layout_marginTop="@dimen/dim8"
+                        android:layout_marginRight="@dimen/dim30">
+
+                        <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                            android:id="@+id/background_form_edit_ssn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="SSN"
+                            android:maxLength="50"
+                            android:textColor="@color/black_87"
+                            android:singleLine="true"
+                            android:textSize="@dimen/fontsize16" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                        android:id="@+id/background_form_tv_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dim30"
+                        android:layout_marginTop="@dimen/dim16"
+                        android:layout_marginRight="@dimen/dim30"
+                        android:layout_marginBottom="@dimen/dim16"
+                        android:background="@drawable/buttons_selector"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dim28"
+                        android:paddingTop="@dimen/dim6"
+                        android:paddingRight="@dimen/dim28"
+                        android:paddingBottom="@dimen/dim8"
+                        android:text="SUBMIT"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/fontsize16" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <include layout="@layout/activity_header" />
+
+  <ImageView
+      android:layout_margin="@dimen/dim30"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"/>
+
+    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+        android:id="@+id/terms_tv_message"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/dim30"
+        android:layout_marginLeft="@dimen/dim30"
+        android:textSize="@dimen/fontsize16"
+        android:textColor="@color/black_87"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/terms_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/icon_next" />
+</android.support.design.widget.CoordinatorLayout>

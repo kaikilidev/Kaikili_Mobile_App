@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_header" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim30"
+            android:layout_marginTop="@dimen/dim10"
+            android:layout_marginRight="@dimen/dim30"
+            android:orientation="horizontal">
+
+            <com.sit.kaikiliService.comman.CircularImageView
+                android:id="@+id/about_profile_civ_profile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/user_circle"
+                android:visibility="visible" />
+
+
+            <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                android:id="@+id/about_profile_tv_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="-1dp"
+                android:layout_marginLeft="@dimen/dim4"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toLeftOf="@+id/about_profile_civ_profile"
+                android:layout_toEndOf="@+id/about_profile_civ_profile"
+                android:text="User Name"
+                android:textColor="@color/text_coloer"
+                android:textSize="@dimen/fontsize14" />
+
+
+        </RelativeLayout>
+
+        <com.sit.kaikiliService.font.TextViewEuphemiaUCASBola
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interior Painting"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/fontsize20"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dim4"
+            />
+
+        <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: 7171 Ikea Dr, Frisco, TX 75034"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/fontsize18"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dim12"
+            />
+        <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date and Time: 01/09/2019 6:00 PM"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/fontsize18"
+            android:gravity="center"
+            />
+
+        <com.sit.kaikiliService.font.TextViewEuphemiaUCASBola
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Details"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/fontsize20"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dim12"
+            />
+
+        <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dim16"
+            android:layout_height="wrap_content"
+            android:text="Ground Sq footage area…….2500"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/fontsize18"
+            android:gravity="center"
+            />
+
+       <com.sit.kaikiliService.comman.WithoutScrollListView
+           android:id="@+id/service_info_listView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="@dimen/dim20"
+           android:layout_marginTop="@dimen/dim20"
+           android:layout_marginLeft="@dimen/dim20">
+
+       </com.sit.kaikiliService.comman.WithoutScrollListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim20"
+            android:layout_marginTop="@dimen/dim20"
+            android:layout_marginLeft="@dimen/dim20"
+            android:orientation="horizontal">
+            <com.sit.kaikiliService.font.TextViewEuphemiaUCASBola
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textColor="@color/black_87"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/fontsize18"
+                android:gravity="left"
+                />
+            <com.sit.kaikiliService.font.TextViewEuphemiaUCASBola
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$1015.00"
+                android:textColor="@color/black_87"
+                android:textSize="@dimen/fontsize18"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dim30">
+
+
+                <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                    android:id="@+id/user_location_tv_onTheWay"
+                    android:layout_width="@dimen/extra_padding_x190"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:background="@drawable/buttons_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/dim8"
+                    android:text="ON THE WAY"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/fontsize16" />
+
+                <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                    android:id="@+id/user_location_tv_completed"
+                    android:layout_marginLeft="@dimen/dim8"
+                    android:layout_width="@dimen/extra_padding_x190"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:background="@drawable/buttons_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/dim8"
+                    android:text="COMPLETED"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/fontsize16" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dim20">
+
+
+                    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                        android:id="@+id/user_location_tv_Accept"
+                        android:layout_width="@dimen/extra_padding_x190"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:background="@drawable/buttons_selector"
+                        android:gravity="center"
+                        android:padding="@dimen/dim8"
+                        android:text="ACCEPT"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/fontsize16" />
+
+                    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                        android:id="@+id/user_location_tv_reschedule"
+                        android:layout_marginLeft="@dimen/dim8"
+                        android:layout_width="@dimen/extra_padding_x190"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:background="@drawable/buttons_selector"
+                        android:gravity="center"
+                        android:padding="@dimen/dim8"
+                        android:text="RESCHEDULE"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/fontsize16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dim20">
+
+
+                    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                        android:id="@+id/user_location_tv_cancel"
+                        android:layout_width="@dimen/extra_padding_x190"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:background="@drawable/buttons_selector"
+                        android:gravity="center"
+                        android:padding="@dimen/dim8"
+                        android:text="CANCEL"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/fontsize16" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

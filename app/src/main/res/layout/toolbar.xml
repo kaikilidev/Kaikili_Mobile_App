@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ToolBarStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/top_bar_Color"
+    android:minHeight="@dimen/abc_action_bar_default_height_material"
+    app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:collapseIcon="@drawable/back_arrow"
+    >
+
+    <!--<include-->
+
+        <!--layout="@layout/actionbar_custome"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+    </android.support.v7.widget.Toolbar>

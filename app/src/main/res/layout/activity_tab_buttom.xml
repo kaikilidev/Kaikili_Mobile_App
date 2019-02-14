@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu="@menu/navigation"
+        app:labelVisibilityMode="labeled"
+        app:itemBackground="@drawable/tab_bg"
+        app:itemIconTint="@drawable/buttom_tabs_selector"
+        app:itemTextColor="@drawable/buttom_tabs_selector"/>
+
+
+
+    <!--<LinearLayout-->
+        <!--android:visibility="gone"-->
+       <!--android:paddingTop="@dimen/dim6"-->
+        <!--android:paddingBottom="@dimen/dim6"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="4">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:onClick="callTabHome"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/dim30"-->
+                <!--android:layout_height="@dimen/dim30"-->
+                <!--android:src="@drawable/tab_home" />-->
+
+            <!--<com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular-->
+                <!--android:id="@+id/tab_home"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:ellipsize="end"-->
+                <!--android:gravity="center"-->
+                <!--android:maxLines="2"-->
+                <!--android:text="Home"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="@dimen/fontsize12" />-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="callTabNotification"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/dim30"-->
+                <!--android:layout_height="@dimen/dim30"-->
+                <!--android:src="@drawable/tab_notification" />-->
+
+            <!--<com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular-->
+                <!--android:id="@+id/tab_notification"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:ellipsize="end"-->
+                <!--android:gravity="center"-->
+                <!--android:maxLines="2"-->
+                <!--android:text="Notification"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="@dimen/fontsize12" />-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:onClick="callTabEarnings"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/dim30"-->
+                <!--android:layout_height="@dimen/dim30"-->
+                <!--android:src="@drawable/earnings" />-->
+
+            <!--<com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular-->
+                <!--android:id="@+id/top_earnings"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:ellipsize="end"-->
+                <!--android:gravity="center"-->
+                <!--android:maxLines="2"-->
+                <!--android:text="Earnings"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="@dimen/fontsize12" />-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:onClick="callTabProfile"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/dim30"-->
+                <!--android:layout_height="@dimen/dim30"-->
+                <!--android:src="@drawable/profile" />-->
+
+            <!--<com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular-->
+                <!--android:id="@+id/top_profile"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:ellipsize="end"-->
+                <!--android:gravity="center"-->
+                <!--android:maxLines="2"-->
+                <!--android:text="Profile"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="@dimen/fontsize12" />-->
+
+
+        <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<View-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/text_coloer" />-->
+
+
+</LinearLayout>

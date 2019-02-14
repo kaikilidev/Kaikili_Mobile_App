@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/menu_ll_top_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dim40"
+                android:background="@drawable/side_nav_bar"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dim14"
+                android:paddingRight="@dimen/dim18"
+                android:paddingBottom="@dimen/dim18"
+                >
+
+                <com.sit.kaikiliService.comman.CircularImageView
+                    android:id="@+id/menu_top_civ_profile"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user_circle"
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                        android:id="@+id/menu_tv_top_userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim8"
+                        android:text="User Name "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/fontsize16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim8"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.sit.kaikiliService.font.TextViewEuphemiaUCASBola
+                                android:id="@+id/menu_tv_top_ratingCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5.0 *"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/fontsize12" />
+
+                            <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rating"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/fontsize10" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/dim14"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.sit.kaikiliService.font.TextViewEuphemiaUCASBola
+                                android:id="@+id/menu_tv_top_serviceCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1,234"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/fontsize12" />
+
+                            <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Services"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/fontsize10" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="@dimen/dim14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.sit.kaikiliService.font.TextViewEuphemiaUCASBola
+                                android:id="@+id/menu_tv_top_agv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.5 min"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/fontsize12" />
+
+                            <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Response Time"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/fontsize10" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menu_tv_addService"
+                android:layout_marginLeft="@dimen/dim12"
+                android:layout_marginRight="@dimen/dim12"
+                android:padding="@dimen/dim14"
+                android:drawableLeft="@drawable/ic_add_services"
+                android:text=" Add Service"
+                android:onClick="callAddService"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/fontsize20" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_20" />
+
+            <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim12"
+                android:id="@+id/menu_tv_serviceCatalogue"
+                android:layout_marginRight="@dimen/dim12"
+                android:padding="@dimen/dim14"
+                android:drawableLeft="@drawable/ic_service_catalogue"
+                android:onClick="callServiceCatalogue"
+                android:text=" Service Catalogue"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/fontsize20" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_20" />
+
+            <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim12"
+                android:layout_marginRight="@dimen/dim12"
+                android:padding="@dimen/dim14"
+                android:drawableLeft="@drawable/ic_servcie_history"
+                android:id="@+id/menu_tv_serviceHistory"
+                android:text=" Service History"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/fontsize20" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_20" />
+
+            <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim12"
+                android:layout_marginRight="@dimen/dim12"
+                android:padding="@dimen/dim14"
+                android:id="@+id/menu_tv_payment"
+                android:drawableLeft="@drawable/ic_payment_info"
+                android:text=" Payment Information"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/fontsize20" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_20" />
+
+            <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim12"
+                android:layout_marginRight="@dimen/dim12"
+                android:drawableLeft="@drawable/ic_menu_profile"
+                android:padding="@dimen/dim14"
+                android:id="@+id/menu_tv_profile"
+                android:text=" Profile"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/fontsize20" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_20" />
+
+            <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim12"
+                android:layout_marginRight="@dimen/dim12"
+                android:padding="@dimen/dim14"
+                android:drawableLeft="@drawable/ic_contact_us"
+                android:text=" Contact Us"
+                android:id="@+id/menu_tv_contactUs"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/fontsize20" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_20" />
+
+            <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim12"
+                android:layout_marginRight="@dimen/dim12"
+                android:padding="@dimen/dim14"
+                android:text=" Logout"
+                android:drawableLeft="@drawable/ic_logout"
+                android:id="@+id/menu_tv_logout"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/fontsize20" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_20" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

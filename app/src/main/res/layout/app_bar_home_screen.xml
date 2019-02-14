@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent">
+
+
+        <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+            android:id="@+id/top_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingRight="@dimen/dim50"
+            android:text="Home"
+            android:textColor="@color/text_coloer"
+            android:textSize="@dimen/fontsize16" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_coloer" />
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"/>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu="@menu/navigation"
+        app:labelVisibilityMode="labeled"
+        app:itemBackground="@drawable/tab_bg"
+        app:itemIconTint="@drawable/buttom_tabs_selector"
+        app:itemTextColor="@drawable/buttom_tabs_selector"/>
+
+
+    <!--<include-->
+        <!--layout="@layout/activity_tab_buttom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/extra_padding_x60" />-->
+
+
+
+</LinearLayout>

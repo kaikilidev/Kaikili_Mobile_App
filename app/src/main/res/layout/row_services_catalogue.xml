@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dim2"
+    android:layout_marginBottom="@dimen/dim2"
+    android:id="@+id/row_add_service_ll_row"
+    android:paddingTop="@dimen/dim10"
+    android:paddingBottom="@dimen/dim10"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+        android:id="@+id/row_service_catalogue_tv_title"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center_vertical"
+        android:layout_marginLeft="@dimen/dim10"
+        android:text="gsDDDsdgdsgs"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_87"
+        android:textSize="@dimen/fontsize16"
+        />
+
+    <com.sit.kaikiliService.font.TextViewEuphemiaUCASBola
+        android:id="@+id/row_service_catalogue_tv_status"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="right|center_vertical"
+        android:layout_marginLeft="@dimen/dim10"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_54"
+        android:textSize="@dimen/fontsize16"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_arrow_right"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_size_x16">16sp</dimen>
+    <dimen name="text_size_x24">24sp</dimen>
+    <dimen name="text_size_x32">32sp</dimen>
+    <dimen name="text_size_x40">40sp</dimen>
+    <dimen name="text_size_x48">48sp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="extra_padding_x5">5dp</dimen>
+    <dimen name="extra_padding_x10">10dp</dimen>
+    <dimen name="extra_padding_x15">15dp</dimen>
+    <dimen name="extra_padding_x20">20dp</dimen>
+    <dimen name="activity_general_margin">10dp</dimen>
+    <dimen name="extra_padding_x30">30dp</dimen>
+    <dimen name="extra_padding_x45">45dp</dimen>
+    <dimen name="extra_padding_x25">25dp</dimen>
+    <dimen name="extra_padding_x55">55dp</dimen>
+    <dimen name="extra_padding_x60">60dp</dimen>
+    <dimen name="extra_padding_x75">75dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <dimen name="profile_width">75dp</dimen>
+    <dimen name="profile_height">75dp</dimen>
+    <dimen name="extra_padding_x125">125dp</dimen>
+    <dimen name="extra_padding_x150">150dp</dimen>
+    <dimen name="extra_padding_x175">175dp</dimen>
+    <dimen name="extra_padding_x190">190dp</dimen>
+    <dimen name="extra_padding_x200">200dp</dimen>
+    <dimen name="extra_padding_x250">250dp</dimen>
+    <dimen name="extra_padding_x100">100dp</dimen>
+    <dimen name="extra_padding_x50">50dp</dimen>
+
+
+    <!--Application Font size-->
+    <dimen name="fontsize10">10sp</dimen>
+    <dimen name="fontsize11">11sp</dimen>
+    <dimen name="fontsize12">12sp</dimen>
+    <dimen name="fontsize14">14sp</dimen>
+    <dimen name="fontsize16">16sp</dimen>
+    <dimen name="fontsize18">18sp</dimen>
+    <dimen name="fontsize20">20sp</dimen>
+    <dimen name="fontsize22">22sp</dimen>
+    <dimen name="fontsize24">24sp</dimen>
+    <dimen name="fontsize26">26sp</dimen>
+    <dimen name="fontsize28">28sp</dimen>
+    <dimen name="fontsize30">30sp</dimen>
+    <dimen name="fontsize32">32sp</dimen>
+    <dimen name="fontsize34">34sp</dimen>
+    <dimen name="fontsize36">36sp</dimen>
+    <dimen name="fontsize38">38sp</dimen>
+    <dimen name="fontsize40">40sp</dimen>
+    <dimen name="fontsize42">42sp</dimen>
+    <dimen name="fontsize44">44sp</dimen>
+    <dimen name="fontsize46">46sp</dimen>
+    <dimen name="fontsize48">48sp</dimen>
+    <dimen name="fontsize50">50sp</dimen>
+    <dimen name="fontsize52">52sp</dimen>
+    <dimen name="fontsize54">54sp</dimen>
+    <dimen name="fontsize56">56sp</dimen>
+    <dimen name="fontsize58">58sp</dimen>
+    <dimen name="fontsize60">60sp</dimen>
+
+    <!--Application dimen size-->
+
+    <dimen name="dim2">2dip</dimen>
+    <dimen name="dim4">4dip</dimen>
+    <dimen name="dim6">6dip</dimen>
+    <dimen name="dim8">8dip</dimen>
+    <dimen name="dim10">10dip</dimen>
+    <dimen name="dim12">12dip</dimen>
+    <dimen name="dim14">14dip</dimen>
+    <dimen name="dim16">16dip</dimen>
+    <dimen name="dim18">18dip</dimen>
+    <dimen name="dim20">20dip</dimen>
+    <dimen name="dim22">22dip</dimen>
+    <dimen name="dim24">24dip</dimen>
+    <dimen name="dim26">26dip</dimen>
+    <dimen name="dim28">28dip</dimen>
+    <dimen name="dim30">30dip</dimen>
+    <dimen name="dim32">32dip</dimen>
+    <dimen name="dim34">34dip</dimen>
+    <dimen name="dim36">36dip</dimen>
+    <dimen name="dim38">38dip</dimen>
+    <dimen name="dim40">40dip</dimen>
+    <dimen name="dim42">42dip</dimen>
+    <dimen name="dim44">44dip</dimen>
+    <dimen name="dim46">46dip</dimen>
+    <dimen name="dim48">48dip</dimen>
+    <dimen name="dim50">50dip</dimen>
+    <dimen name="dim52">52dip</dimen>
+    <dimen name="dim54">54dip</dimen>
+    <dimen name="dim56">56dip</dimen>
+    <dimen name="dim58">58dip</dimen>
+    <dimen name="dim60">60dip</dimen>
+    <dimen name="dim62">62dip</dimen>
+    <dimen name="dim64">64dip</dimen>
+    <dimen name="dim66">66dip</dimen>
+    <dimen name="dim68">68dip</dimen>
+    <dimen name="dim70">70dip</dimen>
+
+
+    <dimen name="btn_with">250dip</dimen>
+
+    <dimen name="edt_with">270dip</dimen>
+    <dimen name="top_logoheight">64dp</dimen>
+    <dimen name="top_titleHeight">46dp</dimen>
+
+
+    <dimen name="ted_picker_selected_image_height">90dp</dimen>
+    <dimen name="ted_picker_fab_elevation">8dp</dimen>
+    <dimen name="ted_picker_fab_size">60dp</dimen>
+    <dimen name="ted_picker_fab_press_translation_z">9dp</dimen>
+
+
+    <dimen name="ted_picker_camera_height">460dp</dimen>
+
+
+</resources>

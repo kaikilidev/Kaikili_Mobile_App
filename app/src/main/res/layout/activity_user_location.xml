@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_header" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/user_location_mapView"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/search_container"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/extra_padding_x30"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <RelativeLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:visibility="visible">
+
+                    <com.sit.kaikiliService.font.CustomEditText
+                        android:id="@+id/user_location_edt_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/extra_padding_x10"
+                        android:layout_marginTop="@dimen/extra_padding_x25"
+                        android:layout_marginRight="@dimen/extra_padding_x15"
+                        android:background="@drawable/box_full_radius_bg_location"
+                        android:completionThreshold="2"
+                        android:drawableLeft="@drawable/icon_cancel_colour"
+                        android:drawableRight="@drawable/icon_loaction"
+                        android:drawablePadding="@dimen/extra_padding_x5"
+                        android:elevation="@dimen/extra_padding_x5"
+                        android:hint="Search location"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/extra_padding_x10"
+                        android:paddingTop="@dimen/extra_padding_x5"
+                        android:paddingRight="@dimen/extra_padding_x10"
+                        android:textSize="@dimen/fontsize16"
+                        android:paddingBottom="@dimen/extra_padding_x5"
+                        android:singleLine="true"
+
+                        android:textColor="@color/black_87" />
+                    <!--android:ellipsize="marquee"-->
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/pick_location_progressBar"
+                android:layout_width="@dimen/dim30"
+                android:layout_height="@dimen/dim30"
+                android:layout_gravity="right"
+                android:visibility="gone" />
+
+
+
+
+
+
+            <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                android:id="@+id/user_location_tv_setLocation"
+                android:layout_width="@dimen/extra_padding_x190"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|bottom"
+                android:layout_marginLeft="@dimen/dim20"
+                android:layout_marginRight="@dimen/dim20"
+                android:layout_marginBottom="@dimen/dim40"
+                android:background="@drawable/buttons_selector"
+                android:gravity="center"
+                android:padding="@dimen/dim8"
+                android:text="Set Location"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/fontsize16" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+

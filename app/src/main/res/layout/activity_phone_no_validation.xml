@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <include layout="@layout/activity_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim10"
+        android:layout_marginTop="@dimen/dim20"
+        android:layout_marginRight="@dimen/dim10"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <com.rilixtech.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            app:ccp_defaultNameCode="US"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:ccp_clickable="false"
+            app:ccp_textSize="@dimen/fontsize16"
+            android:layout_height="match_parent"
+            app:ccp_textFont="fonts/euphemia-ucas-regular.ttf"/>
+
+
+
+        <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+            android:layout_width="match_parent"
+            android:id="@+id/phone_number_edt"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fontsize14"
+            android:maxLength="14"
+            android:textColor="@color/black_87"
+            android:inputType="phone"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/phone_number_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/icon_next" />
+</android.support.design.widget.CoordinatorLayout>

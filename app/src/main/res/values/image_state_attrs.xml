@@ -1,0 +1,33 @@
+<resources>
+
+    <declare-styleable name="ImageViewState">
+        <attr name="image_state" format="integer" />
+        <attr name="image_state_default" format="boolean" />
+        <attr name="image_state0" format="boolean" />
+        <attr name="image_state1" format="boolean" />
+        <attr name="image_state2" format="boolean" />
+        <attr name="image_state3" format="boolean" />
+        <attr name="image_state4" format="boolean" />
+        <attr name="image_state5" format="boolean" />
+        <attr name="image_state6" format="boolean" />
+        <attr name="image_state7" format="boolean" />
+        <attr name="image_state8" format="boolean" />
+        <attr name="image_state9" format="boolean" />
+        <attr name="image_state10" format="boolean" />
+        <attr name="image_state11" format="boolean" />
+        <attr name="image_state12" format="boolean" />
+        <attr name="image_state13" format="boolean" />
+        <attr name="image_state14" format="boolean" />
+        <attr name="image_state15" format="boolean" />
+        <attr name="image_state16" format="boolean" />
+        <attr name="image_state17" format="boolean" />
+        <attr name="image_state18" format="boolean" />
+        <attr name="image_state19" format="boolean" />
+        <attr name="image_state20" format="boolean" />
+        <attr name="image_state21" format="boolean" />
+        <attr name="image_state22" format="boolean" />
+        <attr name="image_state23" format="boolean" />
+        <attr name="image_state24" format="boolean" />
+    </declare-styleable>
+
+</resources>

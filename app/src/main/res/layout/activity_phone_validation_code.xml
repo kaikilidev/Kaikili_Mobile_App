@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <include layout="@layout/activity_header" />
+
+
+    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+        android:id="@+id/phone_code_tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fontsize16"
+        android:textColor="@color/black_87"
+        android:layout_marginLeft="@dimen/dim20"
+        android:layout_marginTop="@dimen/dim20"
+        android:layout_marginRight="@dimen/dim20"/>
+
+
+
+    <com.sit.kaikiliService.font.VerificationCodeEditText
+        android:id="@+id/phone_code_edt_code"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim30"
+        android:layout_marginTop="@dimen/dim30"
+        android:layout_marginRight="@dimen/dim30"
+        android:gravity="left"
+        android:inputType="number"
+        android:textSize="@dimen/fontsize16"
+        android:textColor="@color/black_87"
+        app:bottomLineHeight="1dp"
+        app:bottomLineNormalColor="@color/black_87"
+        app:bottomLineSelectedColor="@color/black_87"
+        app:cursorColor="@color/black_87"
+        app:cursorWidth="@dimen/dim2"
+        app:figures="4"
+
+        app:selectedBackgroundColor="@android:color/transparent"
+        app:verCodeMargin="@dimen/dim10"/>
+
+
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="bottom|left"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="@dimen/dim20"
+        android:layout_marginLeft="@dimen/dim20"
+        android:orientation="vertical"
+        >
+
+        <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+            android:id="@+id/phone_code_tv_resendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend code"
+            android:textColor="@color/accent"
+            android:textSize="@dimen/fontsize16" />
+
+    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+        android:id="@+id/phone_code_tv_editNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/accent"
+        android:textSize="@dimen/fontsize16"
+        android:layout_marginTop="@dimen/dim2"
+        android:text="Edit my mobile number"/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/phone_code_fb_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/icon_next" />
+
+</android.support.design.widget.CoordinatorLayout>

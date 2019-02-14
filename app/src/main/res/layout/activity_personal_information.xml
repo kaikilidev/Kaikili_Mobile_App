@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_header" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dim20">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_87"
+                android:layout_marginLeft="@dimen/dim30"
+                android:layout_marginRight="@dimen/dim30">
+
+                <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                    android:id="@+id/personal_info_edit_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First"
+                    android:textSize="@dimen/fontsize16"
+                    android:inputType="textPersonName|textNoSuggestions"
+                    android:maxLength="50"
+                    android:textColor="@color/black_87"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim30"
+                android:layout_marginTop="@dimen/dim8"
+                android:textColor="@color/black_87"
+                android:layout_marginRight="@dimen/dim30">
+
+                <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                    android:id="@+id/personal_info_edit_last"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last"
+                    android:inputType="textPersonName|textNoSuggestions"
+                    android:textSize="@dimen/fontsize16"
+                    android:maxLength="50"
+                    android:textColor="@color/black_87"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim30"
+                android:textColor="@color/black_87"
+                android:inputType="textPersonName"
+                android:layout_marginTop="@dimen/dim8"
+                android:layout_marginRight="@dimen/dim30">
+
+                <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                    android:id="@+id/personal_info_edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:textSize="@dimen/fontsize16"
+                    android:maxLength="100"
+                    android:textColor="@color/black_87"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim30"
+                android:textColor="@color/black_87"
+                android:layout_marginTop="@dimen/dim8"
+                android:layout_marginRight="@dimen/dim30">
+
+                <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                    android:id="@+id/personal_info_edit_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DOB (MM/DD/YYYY)"
+                    android:singleLine="true"
+                    android:textColor="@color/black_87"
+                    android:inputType="date"
+                    android:textSize="@dimen/fontsize16" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_87"
+                android:layout_marginLeft="@dimen/dim30"
+                android:layout_marginTop="@dimen/dim8"
+                android:layout_marginRight="@dimen/dim30">
+
+                <com.sit.kaikiliService.comman.BetterSpinner
+                    android:paddingTop="@dimen/dim4"
+                    android:id="@+id/personal_info_bs_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dim2"
+                    android:hint="Gender  "
+                    android:singleLine="true"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/fontsize16"
+                    />
+
+
+    </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/personal_info_fb_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/icon_next" />
+
+</android.support.design.widget.CoordinatorLayout>

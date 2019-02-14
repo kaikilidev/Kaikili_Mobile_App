@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim20"
+                android:layout_marginTop="@dimen/dim10"
+                android:layout_marginRight="@dimen/dim20"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/add_service_data_iv_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:src="@drawable/icon_on_swich" />
+
+                <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                    android:id="@+id/add_service_data_tv_costPerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim6"
+                    android:text="Cost per item"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/fontsize18" />
+
+                <View
+                    android:id="@+id/add_service_data_view_costPerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dim4"
+                    android:layout_marginBottom="@dimen/dim4"
+                    android:background="@color/black_87" />
+
+                <com.sit.kaikiliService.comman.WithoutScrollListView
+                    android:id="@+id/add_service_data_listView_costPerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim6"
+                    android:divider="@color/black_30"
+                    android:dividerHeight="1dp">
+
+                </com.sit.kaikiliService.comman.WithoutScrollListView>
+
+
+                <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                    android:id="@+id/add_service_data_tv_costPerSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim16"
+                    android:text="Cost per size"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/fontsize18" />
+
+                <View
+                    android:id="@+id/add_service_data_view_costPerSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dim4"
+                    android:layout_marginBottom="@dimen/dim4"
+                    android:background="@color/black_87" />
+
+                <com.sit.kaikiliService.comman.WithoutScrollListView
+                    android:id="@+id/add_service_data_listView_costPerSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim8"
+                    android:divider="@color/black_30"
+                    android:dividerHeight="1dp">
+
+                </com.sit.kaikiliService.comman.WithoutScrollListView>
+
+
+                <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                    android:id="@+id/add_service_data_tv_quote"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim16"
+                    android:text="Quote on Service"
+                    android:textColor="@color/text_coloer"
+                    android:textSize="@dimen/fontsize16"
+                    android:visibility="gone" />
+
+
+                <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                    android:id="@+id/add_service_data_edt_quoteService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim4"
+                    android:background="@drawable/box_full_radius_bg"
+                    android:gravity="top|left"
+                    android:hint="Please provide more about your service"
+                    android:maxLines="10"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/fontsize16"
+                    android:minLines="10"
+
+                    android:padding="@dimen/dim4"
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:id="@+id/row_add_service_item_ll_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim36"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/row_add_service_item_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text=""
+                        android:theme="@style/BrandedCheckBox" />
+
+
+                    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                        android:id="@+id/row_add_service_offer_tv_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dim4"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:text="Seasonal Offer"
+                        android:textColor="@color/black_87"
+                        android:textSize="@dimen/fontsize16" />
+
+
+                    <com.sit.kaikiliService.font.TextViewEuphemiaUCASBola
+                        android:id="@+id/row_add_service_item_tv_usd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/dim10"
+                        android:layout_marginRight="@dimen/dim4"
+                        android:gravity="right|center_vertical"
+                        android:text="%"
+                        android:textColor="@color/black_87"
+                        android:textSize="@dimen/fontsize18" />
+
+                    <com.sit.kaikiliService.font.EditTextEupheminUCASRegular
+                        android:id="@+id/row_add_service_item_edt_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dim2"
+                        android:layout_marginRight="@dimen/dim2"
+                        android:background="@drawable/box_full_radius_bg"
+                        android:gravity="right"
+                        android:hint="00.00"
+                        android:inputType="number|numberDecimal"
+                        android:maxLength="6"
+                        android:minEms="3"
+                        android:padding="@dimen/dim4"
+                        android:textColor="@color/black_87"
+                        android:textSize="@dimen/fontsize16" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:layout_marginTop="@dimen/dim4"
+                    android:layout_marginBottom="@dimen/dim20"
+                    android:background="@color/black_87" />
+
+
+                <com.sit.kaikiliService.font.TextViewEuphemiaUCASBola
+                    android:id="@+id/add_service_data_tv_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dim24"
+                    android:text="Note: Hair cutting done at provider location"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="@dimen/fontsize12"
+                    android:visibility="gone" />
+
+                <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+                    android:id="@+id/add_service_data_tv_costHelper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dim20"
+                    android:background="@drawable/buttons_selector"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingTop="@dimen/dim8"
+                    android:paddingRight="@dimen/dim30"
+                    android:paddingBottom="@dimen/dim8"
+                    android:text="COST HELPER"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/fontsize16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

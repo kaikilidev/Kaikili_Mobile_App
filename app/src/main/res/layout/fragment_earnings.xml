@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+>
+
+
+    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Earnings"
+        android:textSize="@dimen/fontsize20"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim18"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black_54"/>
+
+
+    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+        android:id="@+id/fag_earnings_tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$535.00"
+        android:textSize="@dimen/fontsize50"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black_87"/>
+
+    <com.sit.kaikiliService.font.TextViewEuphemiaUCASRegular
+        android:id="@+id/fag_earnings_tv_cashOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim30"
+        android:layout_marginBottom="@dimen/dim10"
+        android:background="@drawable/buttons_selector"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dim30"
+        android:paddingTop="@dimen/dim8"
+        android:paddingRight="@dimen/dim30"
+        android:paddingBottom="@dimen/dim8"
+        android:text="CASH OUT"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/fontsize16" />
+
+    <!---->
+
+    <com.sit.kaikiliService.font.TextViewEuphemiaUCASBola
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction History"
+        android:textSize="@dimen/fontsize20"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black_87"/>
+
+
+    <ListView
+        android:id="@+id/fag_earnings_listView"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dim10"
+        android:layout_marginRight="@dimen/dim10"
+        android:layout_marginTop="@dimen/dim20"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+
+    <dimen name="extra_padding_x125">140dp</dimen>
+    <dimen name="extra_padding_x150">165dp</dimen>
+    <dimen name="extra_padding_x175">190dp</dimen>
+    <dimen name="extra_padding_x190">205dp</dimen>
+    <dimen name="extra_padding_x200">215dp</dimen>
+    <dimen name="extra_padding_x250">265dp</dimen>
+    <dimen name="extra_padding_x100">115dp</dimen>
+    <dimen name="extra_padding_x50">65dp</dimen>
+
+    <!--Application Font size-->
+    <dimen name="fontsize10">16sp</dimen>
+    <dimen name="fontsize12">18sp</dimen>
+    <dimen name="fontsize14">20sp</dimen>
+    <dimen name="fontsize16">22sp</dimen>
+    <dimen name="fontsize18">24sp</dimen>
+    <dimen name="fontsize20">26sp</dimen>
+    <dimen name="fontsize22">28sp</dimen>
+    <dimen name="fontsize24">30sp</dimen>
+    <dimen name="fontsize26">32sp</dimen>
+    <dimen name="fontsize28">34sp</dimen>
+    <dimen name="fontsize30">36sp</dimen>
+    <dimen name="fontsize32">38sp</dimen>
+    <dimen name="fontsize34">40sp</dimen>
+    <dimen name="fontsize36">42sp</dimen>
+    <dimen name="fontsize38">44sp</dimen>
+    <dimen name="fontsize40">46sp</dimen>
+    <dimen name="fontsize42">48sp</dimen>
+    <dimen name="fontsize44">50sp</dimen>
+    <dimen name="fontsize46">52sp</dimen>
+    <dimen name="fontsize48">54sp</dimen>
+    <dimen name="fontsize50">56sp</dimen>
+    <dimen name="fontsize52">58sp</dimen>
+    <dimen name="fontsize54">60sp</dimen>
+    <dimen name="fontsize56">62sp</dimen>
+    <dimen name="fontsize58">646sp</dimen>
+    <dimen name="fontsize60">66sp</dimen>
+
+    <!--Application dimen size-->
+
+    <dimen name="dim2">8dip</dimen>
+    <dimen name="dim4">10dip</dimen>
+    <dimen name="dim6">12dip</dimen>
+    <dimen name="dim8">14dip</dimen>
+    <dimen name="dim10">16dip</dimen>
+    <dimen name="dim12">18dip</dimen>
+    <dimen name="dim14">20dip</dimen>
+    <dimen name="dim16">22dip</dimen>
+    <dimen name="dim18">24dip</dimen>
+    <dimen name="dim20">26dip</dimen>
+    <dimen name="dim22">28dip</dimen>
+    <dimen name="dim24">30dip</dimen>
+    <dimen name="dim26">32dip</dimen>
+    <dimen name="dim28">34dip</dimen>
+    <dimen name="dim30">36dip</dimen>
+    <dimen name="dim32">38dip</dimen>
+    <dimen name="dim34">40dip</dimen>
+    <dimen name="dim36">42dip</dimen>
+    <dimen name="dim38">44dip</dimen>
+    <dimen name="dim40">46dip</dimen>
+    <dimen name="dim42">48dip</dimen>
+    <dimen name="dim44">50dip</dimen>
+    <dimen name="dim46">52dip</dimen>
+    <dimen name="dim48">54dip</dimen>
+    <dimen name="dim50">56dip</dimen>
+    <dimen name="dim52">58dip</dimen>
+    <dimen name="dim54">60dip</dimen>
+    <dimen name="dim56">62dip</dimen>
+    <dimen name="dim58">64dip</dimen>
+    <dimen name="dim60">66dip</dimen>
+    <dimen name="dim62">68dip</dimen>
+    <dimen name="dim64">70dip</dimen>
+    <dimen name="dim66">72dip</dimen>
+    <dimen name="dim68">74dip</dimen>
+    <dimen name="dim70">76dip</dimen>
+
+    <dimen name="nav_header_height">170dp</dimen>
+    <dimen name="btn_with">280dip</dimen>
+    <dimen name="edt_with">290dip</dimen>
+
+    <dimen name="top_logoheight">72dp</dimen>
+    <dimen name="top_titleHeight">54dp</dimen>
+</resources>
